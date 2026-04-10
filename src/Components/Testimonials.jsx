@@ -42,8 +42,12 @@ const Testimonials = () => {
               <p className="testimonial-text">"{testimonial.text}"</p>
 
               <div className="testimonial-author">
-                <div className="testimonial-avatar">
-                  {testimonial.initials}
+                <div className="testimonial-avatar" style={{ overflow: 'hidden' }}>
+                  {testimonial.image ? (
+                    <img src={testimonial.image} alt={testimonial.name} style={{ width: '100%', height: '100%', objectFit: 'cover' }} />
+                  ) : (
+                    testimonial.initials
+                  )}
                 </div>
                 <div>
                   <div className="testimonial-name">{testimonial.name}</div>

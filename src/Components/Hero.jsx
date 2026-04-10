@@ -54,7 +54,7 @@ const Hero = () => {
             <div className="hero-image-glow"></div>
             <img
               src={heroImage}
-              alt="Zuns Studio - Roblox Map Developer"
+              alt="Zuns Studio"
               className="hero-image"
             />
             

@@ -49,7 +49,7 @@ const Navbar = () => {
       <nav className={`navbar ${scrolled ? "scrolled" : ""}`}>
         <div className="navbar-inner">
           <a href="#home" className="logo" onClick={(e) => handleNavClick(e, "home")}>
-            Zuns<span className="logo-accent">.</span>Studio
+            Zuns Studio
           </a>
 
           <ul className="nav-links">

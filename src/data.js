@@ -1,5 +1,5 @@
 // Hero image
-import heroAvatar from "/assets/hero-avatar.png";
+import heroAvatar from "/assets/my-avatar.png";
 
 // Project images
 import projectCyberpunk from "/assets/projects/cyberpunk.png";
@@ -10,6 +10,7 @@ import projectScifi from "/assets/projects/scifi.png";
 import projectCity from "/assets/projects/city.png";
 
 export const heroImage = heroAvatar;
+import ayyAvatar from "/assets/ayy_avatar.png";
 
 export const projects = [
   {
@@ -65,9 +66,9 @@ export const services = [
   },
   {
     id: 2,
-    icon: "🌿",
-    title: "Environment Design",
-    description: "Atmospheric landscapes with detailed terrain, lighting, and particle effects that captivate players.",
+    icon: "💻",
+    title: "Scripting System",
+    description: "Advanced Lua scripting for gameplay systems, UI interactions, and custom mechanics that elevate player experience.",
   },
   {
     id: 3,
@@ -86,26 +87,11 @@ export const services = [
 export const testimonials = [
   {
     id: 1,
-    name: "Alex Chen",
-    role: "Game Studio Owner",
-    initials: "AC",
-    text: "Zuns delivered an absolutely incredible map for our horror game. The attention to detail in the lighting and atmosphere was beyond anything we expected. Highly recommended!",
-    stars: 5,
-  },
-  {
-    id: 2,
-    name: "Sarah Mitchell",
-    role: "Roblox Developer",
-    initials: "SM",
-    text: "Working with Zuns was seamless. He understood our vision perfectly and created a roleplay city that our community absolutely fell in love with. Will definitely hire again.",
-    stars: 5,
-  },
-  {
-    id: 3,
-    name: "Ryan Drake",
-    role: "Indie Game Creator",
-    initials: "RD",
-    text: "The optimization work Zuns did on our map was game-changing. Performance improved dramatically while the visuals actually got better. True professional.",
+    name: "Ayy_2981",
+    role: "Owner Ocean Beach Club",
+    initials: "A",
+    image: ayyAvatar,
+    text: "Mapnya bagus, rapih sesuai sama yang kita request. dev nya baik, responnya juga baik dan ramah, yang paling penting dev nya amanah. dan satu lagi, paling penting dev nya selalu mengutamakan kemauan konsument, best !!.",
     stars: 5,
   },
 ];

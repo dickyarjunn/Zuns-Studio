@@ -444,6 +444,9 @@ body {
 .hero-image {
   width: 100%;
   max-width: 440px;
+  aspect-ratio: 1 / 1;
+  object-fit: cover;
+  object-position: center top;
   border-radius: var(--radius-2xl);
   position: relative;
   z-index: 1;
