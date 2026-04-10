@@ -12,7 +12,7 @@ const Footer = () => {
           }}>
             Zuns Studio
           </a>
-          . All rights reserved. Crafted with 💜 by Dickhy Arjun Prasetiyo.
+          . All rights reserved. Crafted with 💜 by Zuns.
         </p>
       </div>
     </footer>

@@ -22,7 +22,7 @@ const Hero = () => {
             </h1>
 
             <p className="hero-subtitle">
-              Hi, I'm <strong>Dickhy Arjun Prasetiyo</strong> — a passionate Roblox Map Developer
+              Hi, I'm <strong>Zuns</strong> — a passionate Roblox Map Developer
               crafting immersive, optimized, and visually stunning game environments
               that captivate players and elevate your game to the next level.
             </p>

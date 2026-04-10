@@ -13,7 +13,7 @@ const About = () => {
             </h2>
 
             <p className="reveal">
-              I'm <strong>Dickhy Arjun Prasetiyo</strong>, the creative force behind
+              I'm <strong>Zuns</strong>, the creative force behind
               <strong> Zuns Studio</strong>. With over 30 completed projects and a deep
               passion for Roblox development, I specialize in building immersive,
               performance-optimized environments that bring game concepts to life.
