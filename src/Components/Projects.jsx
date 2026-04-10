@@ -35,15 +35,30 @@ const Projects = () => {
               <div className="project-card-image">
                 <img src={project.image} alt={project.title} />
                 <div className="project-card-overlay">
-                  <span
-                    className="btn btn-primary"
-                    style={{ padding: "10px 20px", fontSize: "0.8rem" }}
-                  >
-                    View Details
-                    <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2.5" strokeLinecap="round" strokeLinejoin="round">
-                      <path d="M7 17l9.2-9.2M17 17V7H7"/>
-                    </svg>
-                  </span>
+                  {project.link ? (
+                    <a
+                      href={project.link}
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      className="btn btn-primary"
+                      style={{ padding: "10px 20px", fontSize: "0.8rem", textDecoration: "none" }}
+                    >
+                      View Details
+                      <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2.5" strokeLinecap="round" strokeLinejoin="round">
+                        <path d="M7 17l9.2-9.2M17 17V7H7"/>
+                      </svg>
+                    </a>
+                  ) : (
+                    <span
+                      className="btn btn-primary"
+                      style={{ padding: "10px 20px", fontSize: "0.8rem" }}
+                    >
+                      View Details
+                      <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2.5" strokeLinecap="round" strokeLinejoin="round">
+                        <path d="M7 17l9.2-9.2M17 17V7H7"/>
+                      </svg>
+                    </span>
+                  )}
                 </div>
               </div>
 

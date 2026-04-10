@@ -1,21 +1,10 @@
-import { heroImage, skills } from "../data";
+import { skills } from "../data";
 
 const About = () => {
   return (
     <section className="section-padding" id="about">
       <div className="container">
-        <div className="about-grid">
-          {/* Left: Image */}
-          <div className="about-image-wrapper reveal">
-            <div className="about-image-border"></div>
-            <img
-              src={heroImage}
-              alt="Dickhy Arjun Prasetiyo - Roblox Map Developer"
-              className="about-image"
-            />
-          </div>
-
-          {/* Right: Text */}
+        <div style={{ maxWidth: "800px", margin: "0 auto" }}>
           <div className="about-text">
             <span className="section-label reveal">About Me</span>
             <h2 className="heading-lg reveal" style={{ marginBottom: "24px" }}>
@@ -34,9 +23,8 @@ const About = () => {
               Every map I create starts with understanding my client's vision.
               From there, I focus on three pillars: <strong>stunning aesthetics</strong>,
               <strong> smooth performance</strong>, and <strong>unforgettable player experience</strong>.
-              Whether it's a sprawling cyberpunk city, a serene tropical island,
-              or an eerie haunted mansion — I bring it to life with meticulous
-              attention to detail.
+              No matter the genre or style — I bring every concept to life with
+              meticulous attention to detail and a commitment to exceeding expectations.
             </p>
 
             <p className="reveal">

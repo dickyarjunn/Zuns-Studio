@@ -9,7 +9,7 @@ const Showcase = () => {
             Showcase
           </span>
           <h2 className="heading-lg reveal">
-            Featured <span className="text-gradient">Maps</span>
+            Featured <span className="text-gradient">Script Systems</span>
           </h2>
           <p
             className="reveal"
@@ -20,7 +20,7 @@ const Showcase = () => {
               fontSize: "1.05rem",
             }}
           >
-            A closer look at my most ambitious and visually stunning builds.
+            Explore the custom Lua scripts and gameplay systems I've built — from music players to VIP managers, all designed for performance and seamless player experience.
           </p>
         </div>
 

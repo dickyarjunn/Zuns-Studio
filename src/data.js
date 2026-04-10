@@ -8,6 +8,11 @@ import projectCastle from "/assets/projects/castle.png";
 import projectHorror from "/assets/projects/horror.png";
 import projectScifi from "/assets/projects/scifi.png";
 import projectCity from "/assets/projects/city.png";
+import EnjoyToParty from "/assets/projects/EnjoyToParty.png";
+
+// Showcase images
+import showcaseMusic from "/assets/showcase/music-system.png";
+import showcaseVip from "/assets/showcase/vip-system.png";
 
 export const heroImage = heroAvatar;
 import ayyAvatar from "/assets/ayy_avatar.png";
@@ -15,10 +20,11 @@ import ayyAvatar from "/assets/ayy_avatar.png";
 export const projects = [
   {
     id: 1,
-    image: projectCyberpunk,
-    title: "Neon City — Cyberpunk Map",
-    description: "A sprawling cyberpunk metropolis with neon-lit skyscrapers, reflective streets, and immersive nightlife atmosphere.",
-    tags: ["Cyberpunk", "City", "Neon", "Roleplay"],
+    image: EnjoyToParty,
+    title: "Enjoy To Party",
+    description: "A futuristic neon nightclub featuring a glowing pool, dynamic DJ stage, and luxurious lounge areas—perfect for immersive club party and high-energy social experiences..",
+    tags: ["Music", "City", "Neon", "Club"],
+    link: "https://www.roblox.com/share?code=b0fa465b5edf8a4fa63a73f97c368a13&type=ExperienceDetails&stamp=1775799275268",
   },
   {
     id: 2,
@@ -94,6 +100,38 @@ export const testimonials = [
     text: "Mapnya bagus, rapih sesuai sama yang kita request. dev nya baik, responnya juga baik dan ramah, yang paling penting dev nya amanah. dan satu lagi, paling penting dev nya selalu mengutamakan kemauan konsument, best !!.",
     stars: 5,
   },
+  {
+    id: 2,
+    name: "RaffiDev",
+    role: "Owner Roleplay Studio",
+    initials: "RD",
+    text: "Kerjanya cepet dan hasilnya gak mengecewakan. Map yang gw request selesai lebih cepat dari estimasi, dan kualitasnya bener-bener di atas ekspektasi. Pokoknya recommended banget deh buat yang cari map developer!",
+    stars: 5,
+  },
+  {
+    id: 3,
+    name: "ZhafranGG",
+    role: "Game Developer",
+    initials: "ZG",
+    text: "Udah beberapa kali order ke Zuns dan selalu puas. Detail map-nya rapih, lighting-nya keren, dan yang paling penting performa game tetap smooth. Komunikasinya juga enak, selalu update progress. Mantap!",
+    stars: 5,
+  },
+  {
+    id: 4,
+    name: "FadilRblx",
+    role: "Owner Café Roleplay",
+    initials: "FR",
+    text: "Awalnya cuma mau order map sederhana, tapi hasilnya jauh melebihi ekspektasi. Map-nya detail banget, dari interior sampe exterior semuanya rapih. Harga juga worth it banget buat kualitas segini. Thanks Zuns!",
+    stars: 5,
+  },
+  {
+    id: 5,
+    name: "NabilPlay",
+    role: "Roblox Content Creator",
+    initials: "NP",
+    text: "Gw pake map buatan Zuns buat konten YouTube dan viewers langsung nanya ini map dari mana. Kualitasnya emang beda, keliatan premium dan profesional. Respect buat kerja kerasnya!",
+    stars: 5,
+  },
 ];
 
 export const stats = [
@@ -106,15 +144,15 @@ export const stats = [
 export const showcaseItems = [
   {
     id: 1,
-    image: projectCyberpunk,
-    title: "Cyberpunk City Walkthrough",
-    type: "Featured Map",
+    image: showcaseMusic,
+    title: "Custom Music & DJ System",
+    type: "Script System",
   },
   {
     id: 2,
-    image: projectCastle,
-    title: "Fantasy Castle Build Timelapse",
-    type: "Build Process",
+    image: showcaseVip,
+    title: "VIP & Gamepass Manager",
+    type: "Script System",
   },
 ];
 

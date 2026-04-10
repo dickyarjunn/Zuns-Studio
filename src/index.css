@@ -887,6 +887,32 @@ body {
   line-height: 1;
 }
 
+.testimonial-nav-btn {
+  width: 44px;
+  height: 44px;
+  border-radius: 50%;
+  border: 1px solid var(--color-border-glass);
+  background: var(--color-bg-card);
+  color: var(--color-text-primary);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  transition: all var(--transition-base);
+}
+
+.testimonial-nav-btn:hover:not(:disabled) {
+  border-color: var(--color-purple-500);
+  background: rgba(147, 51, 234, 0.15);
+  color: var(--color-purple-400);
+  transform: scale(1.1);
+}
+
+.testimonial-nav-btn:disabled {
+  opacity: 0.3;
+  cursor: not-allowed;
+}
+
 /* ===== Contact Section ===== */
 .contact-wrapper {
   text-align: center;
