@@ -3,7 +3,7 @@ import heroAvatar from "/assets/my-avatar.png";
 
 // Project images
 import projectCyberpunk from "/assets/projects/cyberpunk.png";
-import projectResort from "/assets/projects/resort.png";
+import laWhiskeria from "/assets/projects/lawhiskeria.png";
 import projectCastle from "/assets/projects/castle.png";
 import projectHorror from "/assets/projects/horror.png";
 import projectScifi from "/assets/projects/scifi.png";
@@ -28,10 +28,10 @@ export const projects = [
   },
   {
     id: 2,
-    image: projectResort,
-    title: "Paradise Island Resort",
-    description: "Tropical paradise featuring crystal-clear waters, luxury villas, and stunning sunset-lit beaches.",
-    tags: ["Resort", "Tropical", "Open World"],
+    image: laWhiskeria,
+    title: "La Whiskeria",
+    description: "An opulent nightclub environment centered around a commanding stage, enhanced by dramatic lighting and synchronized flame effects that create a powerful, cinematic atmosphere. Elevated lounges and refined architectural elements balance the intensity with a sense of elegance and exclusivity. The result is a visually striking space that feels immersive, high-end, and unforgettable.",
+    tags: ["Nightlife", "modern", "party", "Luxury"],
   },
   {
     id: 3,
