@@ -1,4 +1,5 @@
 import { useState, useEffect } from "react";
+import { logo } from "../data";
 
 const Navbar = () => {
   const [scrolled, setScrolled] = useState(false);
@@ -49,7 +50,8 @@ const Navbar = () => {
       <nav className={`navbar ${scrolled ? "scrolled" : ""}`}>
         <div className="navbar-inner">
           <a href="#home" className="logo" onClick={(e) => handleNavClick(e, "home")}>
-            Zuns Studio
+            <img src={logo} alt="Zuns Studio Logo" className="logo-img" />
+            <span className="logo-text">Zuns Studio</span>
           </a>
 
           <ul className="nav-links">

@@ -3,7 +3,7 @@ import heroAvatar from "/assets/my-avatar.png";
 
 // Project images
 import projectCyberpunk from "/assets/projects/cyberpunk.png";
-import laWhiskeria from "/assets/projects/lawhiskeria.png";
+import LaWhiskeria from "/assets/projects/LaWhiskeria.png";
 import projectCastle from "/assets/projects/castle.png";
 import projectHorror from "/assets/projects/horror.png";
 import projectScifi from "/assets/projects/scifi.png";
@@ -14,8 +14,11 @@ import EnjoyToParty from "/assets/projects/EnjoyToParty.png";
 import showcaseMusic from "/assets/showcase/music-system.png";
 import showcaseVip from "/assets/showcase/vip-system.png";
 
-export const heroImage = heroAvatar;
 import ayyAvatar from "/assets/ayy_avatar.png";
+import zunsLogo from "/assets/zuns-logo.png";
+
+export const logo = zunsLogo;
+export const heroImage = heroAvatar;
 
 export const projects = [
   {
@@ -28,7 +31,7 @@ export const projects = [
   },
   {
     id: 2,
-    image: laWhiskeria,
+    image: LaWhiskeria,
     title: "La Whiskeria",
     description: "An opulent nightclub environment centered around a commanding stage, enhanced by dramatic lighting and synchronized flame effects that create a powerful, cinematic atmosphere. Elevated lounges and refined architectural elements balance the intensity with a sense of elegance and exclusivity. The result is a visually striking space that feels immersive, high-end, and unforgettable.",
     tags: ["Nightlife", "modern", "party", "Luxury"],
