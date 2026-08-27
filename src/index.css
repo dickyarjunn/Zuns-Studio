@@ -2,22 +2,35 @@
 
 /* ===== CSS Custom Properties (Design Tokens) ===== */
 :root {
-  --color-bg-primary: #050507;
-  --color-bg-secondary: #0a0a0f;
-  --color-bg-card: rgba(15, 15, 25, 0.6);
-  --color-bg-glass: rgba(255, 255, 255, 0.03);
-  --color-border-glass: rgba(255, 255, 255, 0.06);
+  --color-bg-primary: #08080a;
+  --color-bg-secondary: #121215;
+  --color-bg-card: rgba(24, 24, 27, 0.65);
+  --color-bg-glass: rgba(255, 255, 255, 0.04);
+  --color-border-glass: rgba(255, 255, 255, 0.08);
 
-  --color-purple-400: #b07aff;
-  --color-purple-500: #9333ea;
-  --color-purple-600: #7c22d1;
-  --color-purple-700: #6b21a8;
-  --color-purple-glow: rgba(147, 51, 234, 0.25);
-  --color-purple-glow-strong: rgba(147, 51, 234, 0.5);
+  /* Monochrome Tokens */
+  --color-mono-100: #ffffff;
+  --color-mono-200: #f4f4f5;
+  --color-mono-300: #e4e4e7;
+  --color-mono-400: #a1a1aa;
+  --color-mono-500: #71717a;
+  --color-mono-600: #3f3f46;
+  --color-mono-700: #27272a;
+  --color-mono-800: #18181b;
+  --color-mono-glow: rgba(255, 255, 255, 0.12);
+  --color-mono-glow-strong: rgba(255, 255, 255, 0.28);
+
+  /* Backward Compatibility Aliases */
+  --color-purple-400: var(--color-mono-300);
+  --color-purple-500: var(--color-mono-100);
+  --color-purple-600: var(--color-mono-400);
+  --color-purple-700: var(--color-mono-600);
+  --color-purple-glow: var(--color-mono-glow);
+  --color-purple-glow-strong: var(--color-mono-glow-strong);
 
   --color-text-primary: #f5f5f7;
-  --color-text-secondary: rgba(245, 245, 247, 0.6);
-  --color-text-muted: rgba(245, 245, 247, 0.4);
+  --color-text-secondary: rgba(245, 245, 247, 0.65);
+  --color-text-muted: rgba(245, 245, 247, 0.45);
 
   --font-primary: 'Inter', sans-serif;
   --font-display: 'Poppins', sans-serif;
@@ -65,17 +78,17 @@ body {
   background: var(--color-bg-primary);
 }
 ::-webkit-scrollbar-thumb {
-  background: var(--color-purple-700);
+  background: var(--color-mono-600);
   border-radius: var(--radius-full);
 }
 ::-webkit-scrollbar-thumb:hover {
-  background: var(--color-purple-500);
+  background: var(--color-mono-400);
 }
 
 /* Selection */
 ::selection {
-  background: var(--color-purple-500);
-  color: white;
+  background: #ffffff;
+  color: #08080a;
 }
 
 /* ===== Utility Classes ===== */
@@ -115,7 +128,7 @@ body {
 }
 
 .text-gradient {
-  background: linear-gradient(135deg, var(--color-purple-400) 0%, var(--color-purple-500) 50%, #c084fc 100%);
+  background: linear-gradient(135deg, #ffffff 0%, #a1a1aa 50%, #ffffff 100%);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
   background-clip: text;
@@ -129,7 +142,7 @@ body {
   font-weight: 600;
   text-transform: uppercase;
   letter-spacing: 0.15em;
-  color: var(--color-purple-400);
+  color: var(--color-mono-300);
   margin-bottom: 16px;
 }
 
@@ -138,7 +151,7 @@ body {
   display: inline-block;
   width: 24px;
   height: 2px;
-  background: var(--color-purple-500);
+  background: #ffffff;
   border-radius: var(--radius-full);
 }
 
@@ -153,8 +166,8 @@ body {
 }
 
 .glass-card:hover {
-  border-color: rgba(147, 51, 234, 0.2);
-  box-shadow: 0 0 40px var(--color-purple-glow);
+  border-color: rgba(255, 255, 255, 0.25);
+  box-shadow: 0 0 40px var(--color-mono-glow);
   transform: translateY(-4px);
 }
 
@@ -178,21 +191,23 @@ body {
 }
 
 .btn-primary {
-  background: linear-gradient(135deg, var(--color-purple-500), var(--color-purple-700));
-  color: white;
-  box-shadow: 0 4px 24px var(--color-purple-glow);
+  background: linear-gradient(135deg, #ffffff, #e4e4e7);
+  color: #08080a;
+  font-weight: 700;
+  box-shadow: 0 4px 24px var(--color-mono-glow);
 }
 
 .btn-primary:hover {
-  box-shadow: 0 8px 40px var(--color-purple-glow-strong);
+  box-shadow: 0 8px 40px var(--color-mono-glow-strong);
   transform: translateY(-2px) scale(1.02);
+  color: #000000;
 }
 
 .btn-primary::after {
   content: '';
   position: absolute;
   inset: 0;
-  background: linear-gradient(135deg, transparent, rgba(255, 255, 255, 0.1));
+  background: linear-gradient(135deg, transparent, rgba(255, 255, 255, 0.2));
   opacity: 0;
   transition: opacity var(--transition-fast);
 }
@@ -204,13 +219,13 @@ body {
 .btn-outline {
   background: transparent;
   color: var(--color-text-primary);
-  border: 1px solid rgba(255, 255, 255, 0.15);
+  border: 1px solid rgba(255, 255, 255, 0.2);
 }
 
 .btn-outline:hover {
-  background: rgba(255, 255, 255, 0.05);
-  border-color: var(--color-purple-500);
-  color: var(--color-purple-400);
+  background: rgba(255, 255, 255, 0.08);
+  border-color: #ffffff;
+  color: #ffffff;
   transform: translateY(-2px);
 }
 
@@ -265,7 +280,7 @@ body {
 }
 
 .logo-accent {
-  color: var(--color-purple-400);
+  color: #ffffff;
 }
 
 .nav-links {
@@ -291,7 +306,7 @@ body {
   left: 0;
   width: 0;
   height: 2px;
-  background: var(--color-purple-500);
+  background: #ffffff;
   border-radius: var(--radius-full);
   transition: width var(--transition-base);
 }

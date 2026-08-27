@@ -169,7 +169,7 @@ const Testimonials = () => {
                       borderRadius: "var(--radius-full)",
                       border: "none",
                       background: currentIndex === i
-                        ? "var(--color-purple-500)"
+                        ? "#ffffff"
                         : "rgba(255,255,255,0.15)",
                       cursor: "pointer",
                       transition: "all 0.3s ease",
